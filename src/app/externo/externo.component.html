@@ -1,0 +1,11 @@
+{{fecha | date:'fullDate' |uppercase}}<br>
+{{fecha | date:'dd/MM/yy'}}<br>
+
+{{4 |calculadora:2}}
+<br>
+<input type="text" [(ngModel)]="userId" (keyup)="cargaUsuario()">
+<div *ngIf="user">
+  <img src="{{user.avatar}}" alt="">
+  <h2>{{user.first_name + " "+ user.last_name}}</h2>
+
+</div>
